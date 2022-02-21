@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import { useDrag } from "react-dnd";
+import * as S from "./style";
 
-const KanbanItem = ({ id, children }) => {
+const KanbanItem = ({ id, title }) => {
   const ref = useRef(null);
   const [{ isDragging }, drag] = useDrag(() => ({
     type: "card",
@@ -14,7 +15,7 @@ const KanbanItem = ({ id, children }) => {
   drag(ref);
   return (
     <div ref={ref} style={{ opacity }}>
-      {children}
+      <S.Item>{title}</S.Item>
     </div>
   );
 };

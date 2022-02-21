@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <S.Container>
       <S.Brand>
-        <GiCircuitry size="1.5em" color="#2BA19F" />
+        <GiCircuitry size="1.5em" color="#2e9dd8" />
         <span>AgileSoftware</span>
       </S.Brand>
     </S.Container>
